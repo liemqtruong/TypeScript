@@ -3,7 +3,7 @@ class Singleton{
     private constructor(){}
     public static getInstance(): Singleton{
         if (Singleton.m_instance == null){
-            return new Singleton()
+            Singleton.m_instance = new Singleton()
         }
         return Singleton.m_instance
     }
